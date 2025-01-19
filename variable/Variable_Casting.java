@@ -53,6 +53,8 @@ public class Variable_Casting {
 		// 단순히 1L 텀블러에서 500ml 텀블러에 물을 옮길 때를 생각해보세요 
 		// 1L 텀블러에 있는 물의 양에 따라 상황이 달라질 수 있겠죠.
 		
+
+		// 
 		// 정수형 => 문자형
 		// 정수형 작은것들을 문자형char[2B]에 집어넣으려고 하면 오류가 발생합니다.
 		// Explicit Casting 해주도록 합시다.
@@ -61,11 +63,20 @@ public class Variable_Casting {
 		char ca = 'a';
 		byte be = 65;
 		short sa = 374;
+		int ib = 232321;
 		ca = (char)be;
 		System.out.println(ca);
 		
 		ca = (char)sa;
 		System.out.println(ca);
+		
+		// 문자형 => 정수형
+		// 바이트는 크기가 작아서 손실을 대비해 Explicit Casting 해주어야 하지만...
+		be = (byte)ca;
+		
+		// 변수를 담는 통의 차이가 없기 떄문에 그냥 담깁니다.
+		ib = ca;
+		System.out.println("zz : " + ib);
 		
 		
 		// 실수형
