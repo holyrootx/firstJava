@@ -11,7 +11,7 @@ public class String_6_Formatting {
 		double weight = 121.1d;
 		int age = 26;
 	
-		String str2 = str1.formatted(name,height,weight,age);
+		// String str2 = str1.formatted(name,height,weight,age);
 		String str3 = String.format(str1,name,height,weight,age);
 		
 		// 문자열에 포맷팅 가능

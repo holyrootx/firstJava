@@ -96,6 +96,47 @@ public class Array {
 		Arrays.sort(randomNumbers);
 		System.out.println(Arrays.toString(randomNumbers));
 		
+		
+		
+		// 배열의 복사와 관련 
+		// 원시 자료형은 값 자체를 복사한다.
+		// 
+		// 배열은? 
+		// Reference Type이다..
+		// 
+		
+		Boolean[] bools1 = {true,true,true};
+		Boolean[] bools2 = {false,false,false};
+		
+		bools1 =bools2;
+		System.out.println(Arrays.toString(bools1));
+		System.out.println(Arrays.toString(bools2));
+		
+		// boos2의 주소값이 bools1에 들어가서 
+		// 값도 같이 들어가진 모습.
+		// 그러나...
+		// bools2의 값을 변경해주었더니..
+		// bools1의 값도 바뀌었다.
+		// 서로 주소를 공유하기 때문이다.
+		// 동기화되었기 때문에 1에서 값을 변경해도 2와 같이 반영이 될 것이다.
+		
+		// 그렇다면 동기화 시키지않고 값을 복사하고 싶으면 어떻게 해야할까
+		// 배열를 순회하여 값을 하나씩 복사해야 한다.
+		// 값은 primitive 타입이고 primitive타입은 Stack Memory에 
+		// 값을 저장하기 때문이다.
+		// 그러나...
+		// 내부에도 객체가 있다면 ...?
+		// 아직은 모르겠네요
+		bools2[0] = true;
+		System.out.println(Arrays.toString(bools1));
+		System.out.println(Arrays.toString(bools2));
+		
+		
+		// 배열은 특수한 방법으로 복사해야한다..
+		// Method 사용하세요 그냥
+		
+		// 
+		
 	}
 
 }
