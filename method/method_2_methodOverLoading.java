@@ -41,6 +41,14 @@ public class method_2_methodOverLoading {
 	public static short add(short x, short y) {
 		return (short)(x + y);
 	}
+	// 가변인자를 전달하여 여러개의 변수를 담을 수도 있다.
+	static int add(int ...x) {
+		int sum = 0;
+		for(int i = 0; i<x.length; i++) {
+			sum += x[i];
+		}
+		return sum;
+	}
 	
 	
 	
@@ -49,7 +57,8 @@ public class method_2_methodOverLoading {
 		// TODO Auto-generated method stub
 		int a = add(10, 30);
 		double b = add(27, 54.2);
-		System.out.printf("a = %d b = %f",a,b);
+		System.out.printf("a = %d b = %f%n",a,b);
+		System.out.println(add(1,2,3,4,5,6,7,8,9,10));
 	}
 
 }
