@@ -4,7 +4,7 @@ public class Button {
 
     String print;
     int space;
-    static String mode;
+    private static String mode;
 
     // 생성자.
     Button (String print, int space) {
@@ -13,7 +13,7 @@ public class Button {
         mode = "LIGHT";
     }
 
-    static void changeMode() {
+    public static void changeMode() {
     	mode = mode.equals("LIGHT") ? "DARK":"LIGHT"; 
     }
     void place () {
