@@ -14,7 +14,7 @@ public class lookAroundObjectClass {
 		// Tostring Overriding 후 내가 원하는 대로 출력되도록 작성
 		// 다크 zz버튼 (1칸 차지)
 
-		System.out.println(btn.toString());
+		System.out.println(btn);
 		Button copiedBtn = null;
 		try {
 		    copiedBtn = btn.clone();
@@ -25,9 +25,9 @@ public class lookAroundObjectClass {
 		}
 		copiedBtn.setName("zzzzzzz");
 		System.out.println("복사 잘나 확인");
-		System.out.println(copiedBtn.toString());
-		System.out.println(btn.toString());
-
+		System.out.println(copiedBtn);
+		System.out.println(btn);
+		Object object;
 		
 		
 	}
