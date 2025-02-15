@@ -10,13 +10,11 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@AllArgsConstructor
+//@AllArgsConstructor
 @ToString
 @Builder
 @RequiredArgsConstructor
 public class Student {
-	final int x;
-	final int y;
 	private String name;
 	private int age;
 	private int grade;

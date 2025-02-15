@@ -1,4 +1,4 @@
-package useGenerics;
+package makeGenerics.makePair;
 
 public interface Pair<K,V> {
 	public K getKey();
