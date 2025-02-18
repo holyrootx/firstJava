@@ -1,5 +1,7 @@
 package makeComp;
 
+import java.util.Arrays;
+
 public class ArrayHelperMain {
 
 	public static void main(String[] args) {
@@ -20,8 +22,8 @@ public class ArrayHelperMain {
 		ArraysHelper<Number> aH = new ArraysHelper<>(numbers);
 		
 		try {
-			Number[] n = intArr.swapArray(10, 2);
-			System.out.println(n);
+			Number[] n = intArr.swapArray(0, 2);
+			System.out.println(Arrays.toString(n));
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

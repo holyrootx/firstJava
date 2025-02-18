@@ -31,7 +31,7 @@ public class ArraysHelper<T extends Number> implements Comparable<T>{
 	} 
 	@Override
 	public int compareTo(T o) {
-		 
+		
 		return 0;
 	}
 	
