@@ -1,6 +1,8 @@
 package collections.useHashMap;
 
 import java.util.HashMap;
+import java.util.function.BiFunction;
+import java.util.function.BiConsumer;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -24,9 +26,21 @@ public class UseHashMap1 {
 			Integer key = entry.getKey();
 			String value = entry.getValue();
 			System.out.println(key+value);
-			
-			
 		}
+		
+		Iterator<Integer> mapKeys = map.keySet().iterator();
+		while(mapKeys.hasNext()) {
+			Integer key = mapKeys.next();
+			// BiConsumer
+			// void accept(T t, U u);
+			map.forEach((keys,value)->System.out.println(key+value));
+		}
+		
+		
+		
+			
+		
+		
 		
 	}
 
