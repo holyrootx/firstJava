@@ -45,9 +45,11 @@ public class UseStream1 {
 		
 		System.out.println(sum);
 		
-		// 
+		// 배열이면 배열의 개수를 반환 하는 듯 함 
 		int count = (int) Arrays.stream(arr).count();
 		System.out.println(count);
+		
+		 
 		
 		
 		

@@ -1,4 +1,4 @@
-package makeException;
+package useException;
 
 public class MakingException {
 
@@ -10,7 +10,7 @@ public class MakingException {
 			
 		} catch(ArrayIndexOutOfBoundsException e) {
 			e.printStackTrace();
-			System.out.println("せせせせせせせ");
+			System.out.println("鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申");
 			i = 0;
 		}
 		System.out.println(i);

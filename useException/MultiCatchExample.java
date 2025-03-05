@@ -1,4 +1,4 @@
-package makeException;
+package useException;
 
 public class MultiCatchExample {
     public static void main(String[] args) {
